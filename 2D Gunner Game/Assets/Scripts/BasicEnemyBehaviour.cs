@@ -43,6 +43,12 @@ public class BasicEnemyBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        if(!_player || _player == null)
+        {
+            _playerFound = false;
+            return;
+        }
+
         if (_playerFound)
         {
             LookAtPlayer();

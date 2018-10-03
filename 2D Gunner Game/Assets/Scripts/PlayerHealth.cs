@@ -18,6 +18,8 @@ public class PlayerHealth : MonoBehaviour {
 
         if (_health <= 0)
         {
+            if (GameObject.FindObjectOfType<LevelManager>())
+            { GameObject.FindObjectOfType<LevelManager>().GetComponent<LevelManager>()._playerDead = true; }
             // do death behaviour
             Destroy(this.gameObject);
         }
