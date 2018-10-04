@@ -44,3 +44,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2373365049
+    locked: 0
+  - name: Environment
+    uniqueID: 2990737065
+    locked: 0
+  - name: Actors
+    uniqueID: 2790340375
+    locked: 0

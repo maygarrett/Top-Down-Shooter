@@ -24,6 +24,9 @@ public class CrateBehaviour : MonoBehaviour {
             _explosion = Instantiate(_destructionParticles, transform.position, transform.rotation);
             // turn off renderer for crate
             _renderer.enabled = false;
+            // turn off collider for crate
+            if(GetComponent<BoxCollider2D>())
+            { GetComponent<BoxCollider2D>().enabled = false; }
         }
     }
 
